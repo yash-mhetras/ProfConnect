@@ -36,8 +36,8 @@
 
 | Layer         | Tech Stack                                      |
 |---------------|-------------------------------------------------|
-| Frontend      | `Next.js`, `React`, `Redux Toolkit`,`Custom CSS with component-based structure`
-|                (Resonsive to all screens)
+| Frontend      | `Next.js`, `React`, `Redux Toolkit`,`Custom CSS with component-based structure` (Resonsive to all screens)
+|               
 | Backend       | `Node.js`, `Express.js`                         |
 | Database      | `MongoDB`, `MongoDB Atlas`                      |
 | Image Storage  | `Multer`, `Cloudinary`                          |
