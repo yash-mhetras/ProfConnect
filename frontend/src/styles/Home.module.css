@@ -1,0 +1,109 @@
+.container {
+  position: absolute;
+  height: 89vh;
+  width: 90vw;
+  
+}
+
+.maincontainer {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  padding: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  margin-left: 70px;
+ 
+
+
+}
+
+.maincontainer_left {
+  flex: 1;
+  min-width: 280px;
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  
+}
+
+.maincontainer_right {
+  flex: 1;
+  min-width: 280px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.maincontainer_right img {
+  height: auto;
+  max-height: 340px;
+  width: 100%;
+  max-width: 400px;
+  margin-bottom: 40px;
+}
+
+.maincontainer_left > p:nth-child(1) {
+  font-size: 2.5rem;
+  background: -webkit-linear-gradient(45deg, #000000, #9d9d9d);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.maincontainer_left > p:nth-child(2) {
+  color: #4D4D4D;
+  font-size: 1.2rem;
+}
+
+.maincontainer_left > div.buttonjoin {
+  width: fit-content;
+  cursor: pointer;
+  user-select: none;
+  transition: all 0.2s;
+  margin-top: 0.8rem;
+  font-size: 1.2rem;
+  background-color: rgb(197, 44, 208);
+  color: white;
+  padding-inline: 1.2rem;
+  padding-block: 0.6rem;
+  border-radius: 20px;
+}
+
+/* 👇 Media Query for screens below 768px */
+@media screen and (max-width: 768px) {
+  .maincontainer {
+    padding: 20px;
+    flex-direction: column;
+    gap: 20px;
+    margin: 0;
+   
+
+  }
+
+  .maincontainer_left > p:nth-child(1) {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .maincontainer_left > p:nth-child(2) {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .maincontainer_left {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 77px;
+  }
+
+  .maincontainer_right img {
+    max-width: 90%;
+    margin-bottom: 20px;
+  }
+}

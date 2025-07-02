@@ -1,0 +1,216 @@
+.container{
+    padding: 1.3rem;
+    background: rgb(253, 249, 249);
+    display: flex;
+    flex-direction: column;
+    gap: 1.3rem;
+    
+}
+.backdropcontainer{
+    width: 100%;
+    height: 30vh;
+    background: url("https://images.pexels.com/photos/1933320/pexels-photo-1933320.jpeg?_gl=1*1wskw52*_ga*NDU5NjE1ODUzLjE3NDk4MjMwNjU.*_ga_8JE65Q40S6*czE3NTExODE2NDEkbzMkZzEkdDE3NTExODE3NDIkajMwJGwwJGgw");
+    background-size: cover;
+    background-repeat: none
+    ;
+    position: relative;
+    border-radius: 10px;
+}
+.backdropcontainer >img{
+    height: 8em;
+    width: 8em;
+   position: absolute;
+    bottom: -30%;
+    left: 8%;
+    object-fit: cover;
+    border-radius: 100%;
+
+}
+.backdropoverlay{
+    width: 8em;
+    height: 8em;
+    object-fit: cover;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -30%;
+    left: 8%;
+    text-align: center;
+    z-index: 4;
+    transition: all 0.4s;
+    cursor: pointer;
+    color: white;
+    opacity: 0.0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.backdropoverlay:hover{
+    opacity: 0.8;
+    background: black;
+}
+.profiledetails{
+    padding-top: 5.2rem;
+}
+.profiledetails input{
+    outline: none;
+    border-style: none;
+    padding-inline: 10px;
+    padding-block: 9px;
+}
+
+.nameedit{
+    font-weight: bold;
+    font-size: 1.5rem;
+  
+}
+
+.profiledetails textarea{
+    outline: none;
+    border: none;
+    padding-inline: 10px;
+    padding-block: 9px;
+    font-family: "Poppins" !important;
+    font-size: 1.1rem;
+}
+
+
+
+.card{
+    display: flex;
+    align-items: center;
+    gap: 1.4rem;
+}
+.cardprofile{
+    display: flex;
+}
+.cardprofile>img{
+    width: 3.4rem;
+    height: auto;
+    height: 3.4rem;
+    object-fit: cover;
+}
+.connectbtn{
+    padding-inline: 0.8rem;
+    padding-block: 0.3rem;
+    background: rgba(3,93,183,0.905);
+    outline: none;
+    border: none;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    width: fit-content;
+}
+.connectedbtn{
+    padding-inline: 0.8rem;
+    padding-block: 0.3rem;
+    border: 1px solid rgba(3,93,183,0.905);
+    outline: none;
+    
+    color: rgba(3,93,183,0.905);
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+.workhistorycontainer{
+    display: flex;
+    gap: 1.4rem;
+    padding-top: 1.4rem;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.workhistorycard{
+    min-width: fit-content;
+    padding-inline: 2.5rem;
+    padding-block: 1rem;
+    border-radius: 10px;
+    box-shadow: 10px 10px 15px rgb(173,173,173);
+}
+.addworkbtn{
+    padding-inline: 1.3rem;
+    background: white;
+    border: 1px dotted silver;
+    border-radius: 10px;
+    padding-block: 1.2rem;
+    cursor: pointer;
+}
+.commentcontainer{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top:0;
+    left: 0;
+    z-index: 5;
+    background: rgba(0,0,0,0.7);
+    overflow: hidden;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+
+}
+.allcommentscontainer{
+    width: 40vw;
+  height: fit-content;
+    background: white;
+    border-radius: 10px;
+    position: relative;
+    padding: 1.4rem;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    
+
+
+}
+.inputfeild{
+    padding-inline: 1.3rem;
+    padding-block: 0.8rem;
+    outline: none;
+    border-radius: 10px;
+    border: 1px solid silver;
+    width: 100%;
+}
+.profileflex{
+    display:flex;
+    gap:0.7rem;
+
+}
+.profileflexone{
+    display: flex;
+     width: fit-content;
+     align-items: center; 
+     gap: 0.6rem;
+
+}
+@media only screen and (max-width:600px){
+        .backdropcontainer >img{
+        height: 6em;
+        width: 6em;
+    }
+    .backdropoverlay{
+           height: 6em;
+        width: 6em;
+
+    }
+        .profileflex{
+  
+        flex-direction: column;
+    }
+
+    .backdropcontainer{
+        height: 25vh;
+    }
+    .profileflexone{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .allcommentscontainer{
+        width: 70vw;
+    }
+    .profiledetails input{
+        width: 75vw;
+
+}
+
+}
